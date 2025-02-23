@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Portofolio </> </title> 
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="myportofolio.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <!--Body-->
+    <body>
+        
+        <!--Navbar-->
+        <div id="Home"></div>
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact" id="contactme" onclick="openForm()">CONTACT ME</a>
+
+        </div>
+
+        
+        <br>
+        <br>
+
+  
+
+     
+    <div class="container">
+        <div class="background">
+            <h1 class="white-text">Introduction</h1>
+            
+            
+            <strong>
+                <p class="center">
+                    <span class="hover-text">
+                        I'm a full-stack web developer with a passion for coding!. Right now, I’m diving deep into my IT studies through Pitman Training and The Tech Academy, where I’m focusing on industry-relevant courses that give me both the theory and hands-on experience I need to grow as a developer. My ultimate goal is to be a well-rounded developer who can handle both the frontend and backend of any project, turning ideas into functional, user-friendly web applications.
+
+                        I’ve built a strong foundation in frontend technologies like HTML, CSS, JavaScript, and React. I love creating dynamic, interactive interfaces that are not only visually appealing but also easy to use. Making sure my projects are responsive and work well across different devices is something I focus on to ensure a seamless user experience.
+
+                        On the backend, I work with Python, SQL, and other backend technologies to create systems that are efficient and data-driven. From designing databases to optimizing queries and building scalable backend logic, I’m passionate about making sure everything runs smoothly behind the scenes. I love diving into challenges like integrating APIs, building RESTful services, and handling things like authentication.
+
+                        As I continue to learn and build my portfolio, I’ve realized just how important collaboration is in this field. I’m eager to work with others, learn from their experiences, and contribute to projects that push the boundaries of what’s possible in web development. I’m always looking for new tools and technologies to experiment with and grow my skill set.
+
+                        In everything I do, I aim to write clean, efficient, and maintainable code that works well and meets the needs of users. I believe in paying attention to the details—whether it’s crafting intuitive UIs or optimizing backend performance—to create web applications that not only work, but also deliver real value.
+
+                        If you’re looking for a passionate, motivated developer who’s excited to work on your next project, let’s connect! I’d love to help bring your ideas to life and continue learning along the way.
+
+
+                        <br>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span style="background-color: #a6c1ee">-My name is Panteleimon. Welcome to my portfolio website.</span>
+                        <br>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <span style="background-color: #ff9a9e">-Thank you for stopping by and enjoy!</span>
+                    </span>
+                </p>
+            </strong>
+        </div>
+
+        <hr>
+        
+    
+        <div class="slideshow-container">
+
+           
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <video autoplay muted loop style="width: 65%; height: 100%;">
+                    <source src="/Videos/1476227_People_Technology_1920x1080.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text">-I'm available to assist you on your project!</div>
+            </div>
+        
+          
+            <div id="about"></div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*2xsLeLNqKwIoGOQlw8O6Ug.png" style="width: 65%; height: 100%;">
+                <div class="text">-I'm a fullstack developer trained in: HTML, CSS, JavaScript</div>
+            </div>
+        
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="/images/myproject.png" style="width: 65%; height: 100%;">
+                <div class="text">-Experienced in creating dynamic website templates</div>
+            </div>
+        
+           
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="https://www.rogersoft.com/storage/attachments/1694676692.jpg" style="width: 65%; height: 100%;">
+                <div class="text">-Back end development, databases and SQL.</div>
+            </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        
+       
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <hr>
+        
+        <div class="parent-container" id="GitHub">
+            
+            <div class="Column_1">
+                <a href="https://github.com/Pantelis28" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <h1 class="white-text">My projects</h1>
+                    <p class="text1">
+                        You can view my coding projects on my GitHub profile here:
+                        <br>
+                        
+                    </p>
+                </a>
+            </div>
+            
+            <div class="Column_2">
+                <a href="https://github.com/Pantelis28" target="_blank"><img src="/images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+        
+            <!-- Pop-up Button -->
+            <button class="open-button" onclick="openForm()"><img src="/images/email.png"></button>
+
+            <div id="overlay" class="overlay"></div>
+
+            
+
+            <div class="form-popup" id="myForm">
+              <form action="https://formspree.io/f/myzkvbpj" method="post" class="form-container">
+                <h1>Contact me</h1>
+            
+                <label for="email"><b>Email</b></label>
+                <input type="text" 
+                placeholder="Enter Email" 
+                name="email" required>
+                
+                <label for="phone">
+                    Enter your phone number:<br />
+                </label>
+                  
+                <input type="tel" 
+                id="phone" name="phone" 
+                placeholder="123-456-7890"
+                required>
+                  
+
+                <label for="textmessage"><b>Send Message</b></label>
+                <textarea id="message" 
+                name="textmessage" 
+                rows="4" cols="50" 
+                placeholder="Type your message here..."></textarea>
+                    
+                
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+        
+
+        <hr>
+          <!--Footer section-->
+        <footer>
+            <div class="video-background">
+        
+            </div>
+            
+                <p>&copy Prosper Consulting Inc.  <a href="https://www.learncodinganywhere.com/" id="tech-academy" target="_blank">The Tech Academy</a></p>
+                <p>&copy Prosper Consulting Inc.  <a href="https://www.pitman-training.com" id="pitman" target="_blank">Pitman Training School</a></p>
+
+            
+        </footer>
+    </div> 
+    </body>
+</html>
