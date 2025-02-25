@@ -179,6 +179,20 @@ hr {
     }
 }
 
+.intro-text-blue {
+    background-color: #a6c1ee;
+    padding: 5px; 
+    display: inline-block; 
+    border-radius: 15px 0px 0px 0px ;
+}
+
+.intro-text-pink {
+    background-color: #ff9a9e;
+    padding: 5px; 
+    display: inline-block;  
+    border-radius: 15px 0px 0px 0px;
+}
+
 .hover-text {
     display: inline-block; 
     transition: transform 1s, color 1s; 
