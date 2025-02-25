@@ -163,11 +163,6 @@ hr {
     width: 90%;
     margin: 0 auto;
     padding: 50px;
-    border-radius: 30% 100% 0% 0%;
-    border: 1px solid rgba(86, 86, 86, 0.473);
-    background-size: cover;
-    background-image: url(/images/programmer.png);
-    box-shadow: 8px 8px 15px 3px rgba(0, 0, 0, 0.6);
     opacity: 0; 
     transform: translateX(-100%) scale(0.8);
     animation: slideInScaleUp 1s ease-in-out forwards;
