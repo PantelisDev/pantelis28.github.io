@@ -10,7 +10,7 @@
 }
 .Navbar {
     overflow: hidden;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(30px);
     position: fixed;
     top: 0;
     width: 100%;
