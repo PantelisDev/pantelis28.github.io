@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Portofolio </> </title> 
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="myportofolio.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <!--Body-->
+    <body>
+        
+        <!--Navbar-->
+        <div id="Home"></div>
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact" id="contactme" onclick="openForm()">CONTACT ME</a>
+
+        </div>
+
+        
+        <br>
+        <br>
+
+  
+
+     
+    <div class="container">
+        <div class="background">
+            <div class="profile-container">
+                <img class="profile-img" src="/images/profile.jpg" alt="Profile" >
+            </div>
+            <h1 class="white-text"></h1>
+            
+            
+            <strong>
+                <p class="center">
+                    <span class="hover-text">
+                        Driven by a passion for creating innovative and engaging digital solutions,
+                        I am a computer engineering student with hands-on full-stack development expertise. 
+                        I build dynamic web applications and functional websites, focusing on user-centered design and efficient data management. 
+                        My skill set encompasses front-end technologies like HTML, CSS, JavaScript, React Native, and Bootstrap, and extends to back-end development using Python and SQL.
+                        I manage projects from concept through deployment, ensuring optimal performance,
+                        seamless user experiences, and maintainable code, ultimately leveraging technology to address real-world challenges and create a positive impact.
+                        <br>
+                        <div class="center">
+                            <p class="intro-text-pink">"Stay positive, work hard, and make it happen"</p> <br>
+                            <p class="intro-text-blue">"Teamwork makes the dream work." </p>
+                        </div>
+                        
+                    
+                </p>
+            </strong>
+        </div>
+
+        <hr>
+        
+    
+        <div class="slideshow-container">
+
+            <div id="about"></div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png" style="width: 65%; height: 100%;">
+                <div class="text">Trained in: HTML, CSS, JavaScript</div>
+            </div>
+
+
+            <div id="about"></div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="/images/programmer.png" style="width: 65%; height: 100%;">
+                <div class="text">Ready to become a part of your team! </div>
+            </div>
+        
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="/images/myproject.png" style="width: 65%; height: 100%;">
+                <div class="text">Experienced in creating dynamic website templates</div>
+            </div>
+        
+           
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="https://www.rogersoft.com/storage/attachments/1694676692.jpg" style="width: 65%; height: 100%;">
+                <div class="text">Databases and SQL.</div>
+            </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        
+       
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <hr>
+        
+        <div class="parent-container" id="GitHub">
+            
+            <div class="Column_1">
+                <a href="https://github.com/Pantelis28" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <h1 class="white-text">My projects</h1>
+                    <p class="text1">
+                        You can view my coding projects on my GitHub profile here:
+                        <br>
+                        
+                    </p>
+                </a>
+            </div>
+            
+
+        </div>
+        
+            <!-- Pop-up Button -->
+            <button class="open-button" onclick="openForm()"><img src="/images/email.png"></button>
+
+            <div id="overlay" class="overlay"></div>
+
+            
+
+            <div class="form-popup" id="myForm">
+              <form action="https://formspree.io/f/myzkvbpj" method="post" class="form-container">
+                <h1>Contact me</h1>
+            
+                <label for="email"><b>Email:</b></label>
+                <input type="text" 
+                placeholder="Enter Email" 
+                name="email" required>
+                
+                <label for="phone">
+                    Enter your phone number:<br />
+                </label>
+                  
+                <input type="tel" 
+                id="phone" name="phone" 
+                placeholder="123-456-7890"
+                required>
+                  
+
+                <label for="textmessage"><b>Send Message:</b></label>
+                <textarea id="message" 
+                name="textmessage" 
+                rows="4" cols="50" 
+                placeholder="Type your message here..."></textarea>
+                    
+                
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+
+        <div class="gallery-container">
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                  <img src="/images/car-rent.png" alt="inque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="/images/myproject.png" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                  <img src="/images/myproject3.png" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                  <img src="/images/myproject4.png" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+        </div>
+
+        
+          <!--Footer section-->
+        <footer>
+            <div class="video-background">
+        
+            </div>
+            <p>&copy Prosper Consulting Inc.  <a href="https://www.pitman-training.com" id="pitman" target="_blank">Pitman Training School</a></p>
+            
+        </footer>
+    </div> 
+    </body>
+</html>
