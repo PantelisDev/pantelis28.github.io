@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Portofolio </> </title> 
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="myportofolio.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <!--Body-->
+    <body>
+        
+        <!--Navbar-->
+        <div id="Home"></div>
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact" id="contactme" onclick="openForm()">CONTACT ME</a>
+
+        </div>
+
+        
+        <br>
+        <br>
+
+  
+
+     
+    <div class="container">
+        <div class="background">
+            <div class="profile-container">
+                <img class="profile-img" src="/images/profile.png" alt="Profile" >
+            </div>
+            <h1 class="white-text"></h1>
+            
+            
+            <strong>
+                
+                <p class="center scrollable">
+                    <span class="hover-text">
+                        ABOUT ME: 
+                        <br><br>
+                        I am a 24-year-old student at Pitman Training with 2 years of hands-on experience in full-stack development.
+                        I specialize in designing and building dynamic web applications and functional websites, with a strong focus on user-centered design (UI/UX) and efficient data management.
+                        <br><br>
+                        My technical expertise spans front-end and back-end development, and I am adept at managing projects from concept through deployment, ensuring optimal performance, seamless user experiences, and maintainable code.
+                        <br><br>
+                        By leveraging my skills and knowledge, I aim to address real-world challenges through technology and create meaningful, positive impacts in the digital landscape.
+                        I'm looking forward to working together to bring your ideas to life.                        
+                        <br>
+                    </span>
+                </p>
+            </strong>
+        </div>
+            
+        <div class="slideshow-container">
+
+            <div id="about"></div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png" style="width: 65%; height: 100%;">
+                <div class="text">Trained in: HTML, CSS, JavaScript</div>
+            </div>
+
+
+            <div id="about"></div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="https://toolynk.com/wp-content/uploads/2017/10/react-native-paris-et-lyon.png" style="width: 65%; height: 100%;">
+                <div class="text">Ready to become a part of your team! </div>
+            </div>
+        
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2024/10/css3-logo.jpg?resize=1200%2C600&ssl=1" style="width: 65%; height: 100%;">
+                <div class="text">Experienced in creating dynamic website templates</div>
+            </div>
+        
+           
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="https://www.rogersoft.com/storage/attachments/1694676692.jpg" style="width: 65%; height: 100%;">
+                <div class="text">Databases and SQL.</div>
+            </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        
+       
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        
+        
+        <div class="parent-container" id="GitHub">
+            
+            <div class="Column_1">
+                <a href="https://github.com/Pantelis28" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <h1 class="white-text">MY PROJECTS </h1>
+                    <p class="text1">
+                        You can view my coding projects on my GitHub profile by clicking here
+                        <br>
+                        
+                    </p>
+                </a>
+                
+            </div>
+
+            
+            
+
+        </div>
+        
+            <!-- Pop-up Button -->
+            <button class="open-button" onclick="openForm()"><img src="https://raw.githubusercontent.com/PantelisDev/pantelis28.github.io/refs/heads/main/images/email.png"></button>
+
+            <div id="overlay" class="overlay"></div>
+
+            
+
+            <div class="form-popup" id="myForm">
+              <form action="https://formspree.io/f/myzkvbpj" method="post" class="form-container">
+                <h1>Contact me</h1>
+            
+                <label for="email"><b>Email:</b></label>
+                <input type="text" 
+                placeholder="Enter Email" 
+                name="email" required>
+                
+                <label for="phone">
+                    Enter your phone number:<br />
+                </label>
+                  
+                <input type="tel" 
+                id="phone" name="phone" 
+                placeholder="123-456-7890"
+                required>
+                  
+
+                <label for="textmessage"><b>Send Message:</b></label>
+                <textarea id="message" 
+                name="textmessage" 
+                rows="4" cols="50" 
+                placeholder="Type your message here..."></textarea>
+                    
+                
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+
+            <p class="text1">
+                 PROJECTS
+                <br>
+                
+            </p>
+
+        <div class="gallery-container">
+            
+           
+            <div class="gallery">
+                <a target="_blank" href="https://pantelisan2888.github.io/car-rent-website/">
+                  <img src="https://i.pinimg.com/736x/fa/31/eb/fa31ebb67a9758e0e467c69ea7941177.jpg" alt="inque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Demo Car-rental Website </div>
+              </div>
+              
+              
+              <div class="gallery">
+                <a target="_blank" href="https://pantelisan.github.io/Academy-Cinemas-/">
+                  <img src="https://i.pinimg.com/736x/a9/2e/6f/a92e6f8b65ba1ee386467714eae36051.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Shows Schedule (Front-end)</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="https://drive.google.com/file/d/1oq7V14FvqfK_o2zDmneQ9CakoOSUOGaW/view?usp=sharing">
+                  <img src="https://raw.githubusercontent.com/PantelisDev/pantelis28.github.io/refs/heads/main/images/myproject3.png" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Simple "To Do" application JS </div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                  <img src="https://raw.githubusercontent.com/PantelisDev/pantelis28.github.io/refs/heads/main/images/myproject4.png" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Movie search engine React.js</div>
+              </div>
+        </div>
+
+        <div class="center">
+            <p class="intro-text-pink">"Stay positive, work hard, and make it happen"</p> <br>
+            
+        </div>
+        <hr>
+
+        
+          <!--Footer section-->
+        <footer>
+            <div class="video-background">
+        
+            </div>
+            <p>&copy My-personal-portofolio.io</a></p>
+        </footer>
+    </div> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lastScrollTop = 0;
+            var navbar = document.getElementsByClassName("Navbar")[0]; // Ensure this matches your HTML
+    
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = "-100px"; // Hide the navbar
+                } else {
+                    // Scrolling up
+                    navbar.style.top = "0"; // Show the navbar
+                }
+    
+                lastScrollTop = scrollTop; // Update the last scroll position
+            });
+        });
+    </script>
+    
+
+    </body>
+</html>
